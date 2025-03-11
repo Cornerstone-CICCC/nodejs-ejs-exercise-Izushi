@@ -1,0 +1,13 @@
+<%- include('partials/header', { pageTitle: 'Contact' }) %>
+
+  <main>
+    <h1><%= title %></h1>
+    <p><%= content %></p>
+    <ul>
+      <% contacts.forEach(contact => { %>
+        <li><%= contact %></li>
+      <% }) %>
+    </ul>
+  </main>
+
+  <%- include('partials/footer') %>

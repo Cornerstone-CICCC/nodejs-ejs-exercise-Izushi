@@ -1,0 +1,11 @@
+<%- include('partials/header', { pageTitle: 'Home' }) %>
+
+  <main>
+    <h1><%= title %></h1>
+    <p><%= message %></p>
+    <% if (showYear) { %>
+      <p>Today's Year: <%= new Date().getFullYear() %></p>
+      <% } %>
+  </main>
+
+<%- include('partials/footer.ejs') %>
